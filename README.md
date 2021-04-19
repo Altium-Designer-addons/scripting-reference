@@ -6,8 +6,8 @@ Because some of the content available here is not publicly available any more fr
 
 ## Documentation
 Places where you may find the official documentation for the Scripting system:\
-New documentation system (after 2018): https://www.altium.com/documentation/altium-dxp-developer/delphi-sdk-reference \
-Old documentation system (before 2017): https://techdocs.altium.com/display/SCRT/Scripting
+New documentation system (after 2018): [Scripting System Overview & Setup](https://www.altium.com/documentation/altium-designer/scripting-system-overview-setup-ad) and [Delphi SDK Reference](https://www.altium.com/documentation/altium-dxp-developer/delphi-sdk-reference) \
+Old documentation system (before 2017): [Scripting documentation entry point](https://techdocs.altium.com/display/SCRT/Scripting)
 
 If you're looking for the good old documentation material in PDF format, you may have a chance to find ones from: http://valhalla.altium.com/Learning-Guides/ (needs advanced searching techniques).
 
