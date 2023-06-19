@@ -1,0 +1,220 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body><h3>IPCB_LayerStack</h3>
+
+<table style="width:100%" cellpadding="1" cellspacing="1" border="1">
+	<tbody>
+		<tr>
+			<td>
+			<h5>IPCB_LayerStack - Deprecated</h5>
+			</td>
+			<td>
+			<h5>IPCB_LayerStack_V7</h5>
+			</td>
+			<td>
+			<h5>IPCB_LayerStack</h5>
+			</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top; white-space:nowrap">
+			<p><code><strong>Method</strong>s<br>
+			RemoveFromStack (L : IPCB_LayerObject);&nbsp;&nbsp;<br>
+			InsertInStackBelow (RefL : IPCB_LayerObject;<br>
+			
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ L&nbsp; : IPCB_LayerObject);&nbsp;&nbsp;<br>
+			InsertInStackAbove (RefL : IPCB_LayerObject;<br>
+			
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ L&nbsp; : IPCB_LayerObject);&nbsp;&nbsp;<br>
+			FirstLayer : IPCB_LayerObject;&nbsp;<br>
+			NextLayer (L : IPCB_LayerObject) : IPCB_LayerObject;&nbsp;<br>
+			PreviousLayer (L : IPCB_LayerObject) : IPCB_LayerObject;&nbsp;<br>
+			LastLayer : IPCB_LayerObject;&nbsp;<br>
+			InsertLayer (L : TLayer);<br>
+			LastInternalPlane : IPCB_InternalPlane;<br>
+			FirstAvailableSignalLayer : IPCB_LayerObject;&nbsp;<br>
+			FirstAvailableInternalPlane : IPCB_InternalPlane;<br>
+			SignalLayerCount : Integer; &nbsp;&nbsp;</code></p>
+			</td>
+			<td style="vertical-align:top; white-space:nowrap">
+			<p><code><strong>Methods/Functions</strong><br>
+			RemoveFromStack(L : IPCB_LayerObject_V7);<br>
+			InsertInStackBelow (RefL : IPCB_LayerObject_V7;<br>
+			
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ L : IPCB_LayerObject_V7);<br>
+			InsertInStackAbove (RefL : IPCB_LayerObject_V7;<br>
+			
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ L : IPCB_LayerObject_V7);<br>
+			FirstLayer : IPCB_LayerObject_V7;<br>
+			NextLayer(L : IPCB_LayerObject_V7) : IPCB_LayerObject_V7;<br>
+			PreviousLayer(L : IPCB_LayerObject_V7) : IPCB_LayerObject_V7;<br>
+			LastLayer : IPCB_LayerObject_V7;<br>
+			InsertLayer(L : TV6_Layer);<br>
+			LastInternalPlane : IPCB_InternalPlane_V7;<br>
+			FirstAvailableSignalLayer : IPCB_LayerObject_V7;<br>
+			FirstAvailableInternalPlane : IPCB_InternalPlane_V7;<br>
+			SignalLayerCount : Integer;<br>
+			LayersInStackCount : Integer;<br>
+			GetState_LayerStackStyle : TLayerStackStyle;<br>
+			SetState_LayerStackStyle(SS : TLayerStackStyle);</code></p>
+			</td>
+			<td style="vertical-align:top; white-space:nowrap">
+			<p><code><strong>Methods/Functions</strong><br>
+			Board : IPCB_Board;<br>
+			LayerObject(ALayer : TV6_Layer) : IPCB_LayerObject;<br>
+			DielectricTop : IPCB_SolderMaskLayer;<br>
+			DielectricBottom : IPCB_SolderMaskLayer;<br>
+			ID : WideString;<br>
+			StateID : Integer;<br>
+			Count : Integer;<br>
+			Iterator : IPCB_LayerObjectIterator;<br>
+			First(t : TLayerClassID) : IPCB_LayerObject;<br>
+			Last(t : TLayerClassID) : IPCB_LayerObject;<br>
+			Next(t : TLayerClassID; ARefLayer : IPCB_LayerObject) : IPCB_LayerObject;<br>
+			Previous(t : TLayerClassID; ARefLayer : IPCB_LayerObject) : IPCB_LayerObject;</code></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top; white-space:nowrap">
+			<p><code><strong>Properties</strong><br>
+			Board : IPCB_BoardRead<br>
+			&nbsp;&nbsp;&nbsp; - GetState_Board;<br>
+			LayerObject [L : TLayer]: IPCB_LayerObject<br>
+			&nbsp;&nbsp;&nbsp; - GetState_LayerObject;<br>
+			DielectricTop : IPCB_DielectricObject<br>
+			&nbsp;&nbsp;&nbsp; - GetState_DielectricTop;<br>
+			DielectricBottom: IPCB_DielectricObject<br>
+			&nbsp;&nbsp;&nbsp; - GetState_DielectricBottom;<br>
+			ShowDielectricTop : Boolean<br>
+			&nbsp;&nbsp;&nbsp; - GetState_ShowTopDielectric;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_ShowTopDielectric;<br>
+			ShowDielectricBottom: Boolean<br>
+			&nbsp;&nbsp;&nbsp; - GetState_ShowBotDielectric;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_ShowBotDielectric;</code></p>
+			</td>
+			<td style="vertical-align:top; white-space:nowrap">
+			<p><code><strong>Properties</strong><br>
+			Board : IPCB_BoardRead<br>
+			&nbsp;&nbsp;&nbsp; - GetState_Board;<br>
+			LayerObject [L : TLayer]: IPCB_LayerObject<br>
+			&nbsp;&nbsp;&nbsp; - GetState_LayerObject;<br>
+			DielectricTop : IPCB_DielectricObject<br>
+			&nbsp;&nbsp;&nbsp; - GetState_DielectricTop;<br>
+			DielectricBottom: IPCB_DielectricObject<br>
+			&nbsp;&nbsp;&nbsp; - GetState_DielectricBottom;<br>
+			ShowDielectricTop : Boolean<br>
+			&nbsp;&nbsp;&nbsp; - GetState_ShowTopDielectric;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_ShowTopDielectric;<br>
+			ShowDielectricBottom: Boolean<br>
+			&nbsp;&nbsp;&nbsp; - GetState_ShowBotDielectric;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_ShowBotDielectric;</code></p>
+			</td>
+			<td style="vertical-align:top; white-space:nowrap">
+			<p><code><strong>Properties</strong><br>
+			Name : TPCBString<br>
+			&nbsp;&nbsp;&nbsp; - GetState_Name;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_Name;<br>
+			IsFlex : Boolean<br>
+			&nbsp;&nbsp;&nbsp; - GetState_IsFlex;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_IsFlex;<br>
+			ShowDielectricTop : Boolean<br>
+			&nbsp;&nbsp;&nbsp; - GetState_ShowTopDielectric;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_ShowTopDielectric;<br>
+			ShowDielectricBottom : Boolean<br>
+			&nbsp;&nbsp;&nbsp; - GetState_ShowBotDielectric;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_ShowBotDielectric;</code></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3>IPCB_LayerObject</h3>
+
+<table style="width:100%" cellpadding="1" cellspacing="1" border="1">
+	<tbody>
+		<tr>
+			<td>
+			<h5>IPCB_LayerObject - Deprecated</h5>
+			</td>
+			<td>
+			<h5>IPCB_LayerObject _V7</h5>
+			</td>
+			<td>
+			<h5>IPCB_LayerObject</h5>
+			</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top; white-space:nowrap"><code><strong>Methods</strong><br>
+			I_ObjectAddress : TPCBObjectHandle;<br>
+			IsInLayerStack : Boolean;</code></td>
+			<td style="vertical-align:top; white-space:nowrap">
+			<p><code><strong>Methods/Functions</strong><br>
+			Dielectric : IPCB_DielectricObject;<br>
+			LayerID : TV6_Layer;</code><br>
+			&nbsp;</p>
+			</td>
+			<td>
+			<p><code><strong>Methods/Functions</strong><br>
+			I_ObjectAddress : Pointer<br>
+			IsInLayerStack : Boolean;<br>
+			V7_LayerID : IDispatch; (TV7_Layer)<br>
+			V6_LayerID : TV6_Layer;<br>
+			LayerStack : IPCB_LayerStackBase;</code></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><code><strong>Properties</strong><br>
+			LayerStack : IPCB_LayerStack</code><br>
+			<code>&nbsp; &nbsp; - GetState_LayerStack;<br>
+			LayerID : TLayer</code><br>
+			<code>&nbsp;&nbsp;&nbsp; - GetState_LayerID;<br>
+			&nbsp;&nbsp;&nbsp; - Write SetState_LayerID;<br>
+			Name: TPCBString<br>
+			&nbsp;&nbsp;&nbsp; - GetState_LayerName;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_LayerName;<br>
+			CopperThickness : TCoord<br>
+			&nbsp;&nbsp;&nbsp; - GetState_CopperThickness;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_CopperThickness;<br>
+			Dielectric&nbsp; : IPCB_DielectricObject<br>
+			&nbsp;&nbsp;&nbsp; - GetState_Dielectric;<br>
+			UsedByPrims : Boolean<br>
+			&nbsp;&nbsp;&nbsp; - GetState_UsedByPrims;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_UsedByPrims;<br>
+			IsDisplayed[Board : IPCB_Board] : Boolean<br>
+			&nbsp;&nbsp;&nbsp; - GetState_IsDisplayed;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_IsDisplayed;<br>
+			PreviousLayer : TLayer<br>
+			&nbsp;&nbsp;&nbsp; - GetState_PreviousLayer;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_PreviousLayer;<br>
+			NextLayer : TLayer<br>
+			&nbsp;&nbsp;&nbsp; - GetState_NextLayer;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_NextLayer;</code></p>
+			</td>
+			<td style="vertical-align:top; white-space:nowrap">
+			<p><code><strong>Properties</strong><br>
+			IsDisplayed [Board : IPCB_Board] : Boolean</code><br>
+			<code>&nbsp;&nbsp;&nbsp; - GetState_IsDisplayed;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_IsDisplayed;<br>
+			CopperThickness : Tcoord<br>
+			&nbsp;&nbsp;&nbsp; - GetState_CopperThickness;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_CopperThickness;</code><br>
+			&nbsp;</p>
+			</td>
+			<td style="vertical-align:top; white-space:nowrap"><code><strong>Properties</strong><br>
+			Name : TPCBString<br>
+			&nbsp;&nbsp;&nbsp; - GetState_LayerName;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_LayerName;<br>
+			UsedByPrims : Boolean<br>
+			&nbsp;&nbsp;&nbsp; - GetState_UsedByPrims;<br>
+			&nbsp;&nbsp;&nbsp; - SetState_UsedByPrims;</code></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</body></html>
